@@ -1,0 +1,9 @@
+<section class="text-log-wrapper">
+  <ul id="textlog" class="log-list">
+    <li class="log-line" *ngFor="let line of loglines.slice().reverse(); let i = index;">
+      <span class="log-line-index">{{i}}</span>
+      <div class="log-line-divider"></div>
+      <p class="log-line-content {{line[1]}}">{{line[0]}}</p>
+    </li>
+  </ul>
+</section>

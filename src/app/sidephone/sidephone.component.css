@@ -1,0 +1,44 @@
+.phone {
+  width: 50%;
+  height: 100%;
+  right: 0;
+  background: pink;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.phone-button {
+  width: 20%;
+  height: 75px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  color: #ccc;
+  cursor: pointer;
+  display: inline;
+  float: left;
+  position: relative;
+}
+.phone-button:hover {
+  background: #222;
+  width: calc(20% + 4px);
+  height: 79px;
+  margin-top: -2px;
+  margin-bottom: -2px;
+  margin-left: -2px;
+  margin-right: -2px;
+  z-index: 2;
+}
+.phone-button:active {
+  background: #444;
+  box-shadow: inset 0 0 5px black;
+  width: 20%;
+  height: 75px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 2;
+}

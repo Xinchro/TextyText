@@ -1,0 +1,12 @@
+.inputs {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+}
+
+.text-log {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}

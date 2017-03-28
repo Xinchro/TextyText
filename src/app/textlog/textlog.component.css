@@ -1,0 +1,46 @@
+.text-log-wrapper {
+  background: #333;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.log-list {
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+}
+
+.log-line {
+  background: #555;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+.log-line:nth-child(odd) {
+  background: #444;
+}
+
+.log-line-index {
+  font-weight: bold;
+}
+.log-line-divider {
+  height: 100%;
+  border: 1px solid black;
+  margin: 0 5px;
+}
+.log-line-content.neutral {
+  color: white;
+}
+.log-line-content.negative {
+  color: red;
+}
+.log-line-content.positive {
+  color: lime;
+}

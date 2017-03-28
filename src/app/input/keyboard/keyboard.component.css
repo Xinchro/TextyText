@@ -1,0 +1,102 @@
+.text-input {
+  width: 100%;
+  height: 25px;
+  border: none;
+  top: 0;
+}
+.text-input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #aaa;
+}
+
+.keys {
+  height: calc(100% - 25px);
+  width: 100%;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.keys ul {
+  list-style: none;
+  bottom: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.key-row {
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.key-row ul {
+  list-style: none;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.key-wrapper {
+  background: #ccc;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-wrapper button {
+  background: #999;
+  border: none;
+  list-style: none;
+  display: inline-flex;
+  position: relative;
+  float: left;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  justify-content: center;
+  cursor: pointer;
+  margin: -3px 0 0 -3px;
+  padding: 0 3px 3px 0;
+  box-shadow: 3px 3px 0px 0px black, 2px 2px 0px 0px black, 1px 1px 0px 0px black;
+  flex-direction: column;
+}
+.key-wrapper button:hover {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 0px 0px 0px black;
+}
+.key-wrapper button:active {
+  background: #909090;
+  padding: 3px 0 0 3px;
+  box-shadow: inset 3px 3px 0px 0px black;
+  margin: 0;
+}
+
+.key-wrapper button .key-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+}
+
+.key-wrapper button .key-label {
+  font-size: 30px;
+  font-weight: bolder;
+}
+

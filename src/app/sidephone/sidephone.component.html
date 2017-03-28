@@ -1,0 +1,16 @@
+<section [ngSwitch]="chosenMenu" class="phone">
+  <header>
+    <button class="phone-button" (click)="chosenMenu='inv'">inv</button>
+    <button class="phone-button" (click)="chosenMenu='map'">map</button>
+    <button class="phone-button" (click)="chosenMenu='eqp'">eqp</button>
+    <button class="phone-button" (click)="chosenMenu='qst'">qst</button>
+    <button class="phone-button" (click)="chosenMenu='crd'">crd</button>
+  </header>
+  <section>
+    <app-inventory class="popop" *ngSwitchDefault></app-inventory>
+    <app-map class="popop" *ngSwitchCase="'map'"></app-map>
+    <app-equipment class="popop" *ngSwitchCase="'eqp'"></app-equipment>
+    <app-quests class="popop" *ngSwitchCase="'qst'"></app-quests>
+    <app-credits class="popop" *ngSwitchCase="'crd'"></app-credits>
+  </section>
+</section>
