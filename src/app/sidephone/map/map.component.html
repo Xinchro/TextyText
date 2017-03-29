@@ -1,3 +1,97 @@
-<p>
-  map works!
-</p>
+<section class="phone-map-wrapper">
+  <section class="map-wrapper">
+    <ul>
+      <li class="map-block-row">
+        <ul>
+          <li class="map-block" id="block11"></li>
+          <li class="map-block" id="block12"></li>
+          <li class="map-block" id="block13"></li>
+          <li class="map-block" id="block14"></li>
+          <li class="map-block" id="block15"></li>
+        </ul>
+      </li>
+      <li class="map-block-row">
+        <ul>
+          <li class="map-block" id="block21"></li>
+          <li class="map-block" id="block22"></li>
+          <li class="map-block" id="block23"></li>
+          <li class="map-block" id="block24"></li>
+          <li class="map-block" id="block25"></li>
+        </ul>
+      </li>
+      <li class="map-block-row">
+        <ul>
+          <li class="map-block" id="block31"></li>
+          <li class="map-block" id="block32"></li>
+          <li class="map-block" id="block33"></li>
+          <li class="map-block" id="block34"></li>
+          <li class="map-block" id="block35"></li>
+        </ul>
+      </li>
+      <li class="map-block-row">
+        <ul>
+          <li class="map-block" id="block41"></li>
+          <li class="map-block" id="block42"></li>
+          <li class="map-block" id="block43"></li>
+          <li class="map-block" id="block44"></li>
+          <li class="map-block" id="block45"></li>
+        </ul>
+      </li>
+      <li class="map-block-row">
+        <ul>
+          <li class="map-block" id="block51"></li>
+          <li class="map-block" id="block52"></li>
+          <li class="map-block" id="block53"></li>
+          <li class="map-block" id="block54"></li>
+          <li class="map-block" id="block55"></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section class="map-info-wrapper">
+    <ul class="info-column">
+      <li class="info-line">
+        <span class="info-title">Position</span>
+        <span class="info-data">{{getPos() ? getPos() : "Error acquiring position"}}</span>
+      </li>
+      <li class="info-line">
+        <span class="info-title">Nearest settlement</span>
+        <span class="info-data">{{getNearestSettlement() ? getNearestSettlement() : "Error locating settlement"}}</span>
+      </li>
+      <li class="info-line">
+        <span class="info-title">Nearest shop</span>
+        <span class="info-data">{{getNearestShop() ? getNearestShop() : "Error locating shop"}}</span>
+      </li>
+      <li class="info-line">
+        <span class="info-title">Span:</span>
+        <span class="info-data">{{getData() ? getData() : "Error"}}</span>
+      </li>
+      <li class="info-line">
+        <span class="info-title">Span:</span>
+        <span class="info-data">{{getData() ? getData() : "Error"}}</span>
+      </li>
+    </ul>
+    <ul class="info-column">
+      <li class="info-line">
+        <span class="info-title">Span:</span>
+        <span class="info-data">{{getData() ? getData() : "Error"}}</span>
+      </li>
+      <li class="info-line">
+        <span class="info-title">Span:</span>
+        <span class="info-data">{{getData() ? getData() : "Error"}}</span>
+      </li>
+      <li class="info-line">
+        <span class="info-title">Span:</span>
+        <span class="info-data">{{getData() ? getData() : "Error"}}</span>
+      </li>
+      <li class="info-line">
+        <span class="info-title">Span:</span>
+        <span class="info-data">{{getData() ? getData() : "Error"}}</span>
+      </li>
+      <li class="info-line">
+        <span class="info-title">Span:</span>
+        <span class="info-data">{{getData() ? getData() : "Error"}}</span>
+      </li>
+    </ul>
+  </section>
+</section>

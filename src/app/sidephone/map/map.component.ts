@@ -12,4 +12,20 @@ export class MapComponent implements OnInit {
   ngOnInit() {
   }
 
+  getPos() {
+    return null
+  }
+
+  getNearestSettlement() {
+    return null
+  }
+
+  getNearestShop() {
+    return null
+  }
+
+  getData() {
+    return null
+  }
+
 }
