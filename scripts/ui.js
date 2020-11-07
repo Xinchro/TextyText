@@ -1,4 +1,4 @@
-let ui = {
+  let ui = {
   game: document.querySelector('#game')
 }
 
@@ -30,7 +30,6 @@ addUI(createElement({
   type: 'div',
   id: 'log',
   classList: 'log',
-  innerText: 'This is the log',
 }), ui.game)
 
 addUI(createElement({

@@ -36,3 +36,22 @@ body {
   grid-row-start: 1;
   grid-row-end: 3;
 }
+
+.log-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+.log-entry:nth-child(odd) {
+  background: #333;
+}
+
+.log-entry {
+  font-size: 1.5em;
+  padding: 5px;
+}
