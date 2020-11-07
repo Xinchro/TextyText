@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-shadow: inset 0px 0px 0px 2px salmon;
+}
+
+.game {
+  box-shadow: inset 0px 0px 0px 2px hotpink;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.log {
+  box-shadow: inset 0px 0px 0px 2px red;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.keys {
+  box-shadow: inset 0px 0px 0px 2px green;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.phone {
+  box-shadow: inset 0px 0px 0px 2px blue;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
