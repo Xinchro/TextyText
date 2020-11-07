@@ -1,8 +1,5 @@
 console.log('Starting log')
 
-// TODO
-// seperate data logic from visual logic
-
 let log = []
 let logDOM = document.createElement('ul')
 logDOM.classList.add('log-wrapper')
@@ -44,13 +41,13 @@ function constructOutput(message) {
   return constructedMessage
 }
 
-function add(message) {
+function addMessage(message) {
   if(!message) throw 'No message to add to log'
   addEntry(constructOutput(message))
   return log
 }
 
-function remove(message) {
+function removeMessage(message) {
   if(!message) throw 'No message to remove from log'
   let index = log.findIndex((entry => entry.includes(message)))
   console.log(message)
@@ -74,16 +71,6 @@ function getLog() {
 function getLogDOM() {
   return logDOM
 }
-
-
-add('potato1')
-add('potato2')
-add('potato3')
-add('potato4')
-add('potato5')
-setTimeout(()=>add('potato6'), 2000)
-
-remove('potato3')
 
 // link to other outputs?
 // link to enemies in some compendium?

@@ -5,6 +5,7 @@ body {
 }
 
 .game {
+  position: relative;
   box-shadow: inset 0px 0px 0px 2px hotpink;
   width: 100vw;
   height: 100vh;
@@ -14,6 +15,8 @@ body {
 }
 
 .log {
+  position: relative;
+  overflow-y: scroll;
   box-shadow: inset 0px 0px 0px 2px red;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -22,6 +25,7 @@ body {
 }
 
 .keys {
+  position: relative;
   box-shadow: inset 0px 0px 0px 2px green;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -30,6 +34,7 @@ body {
 }
 
 .phone {
+  position: relative;
   box-shadow: inset 0px 0px 0px 2px blue;
   grid-column-start: 2;
   grid-column-end: 2;
@@ -54,4 +59,31 @@ body {
 .log-entry {
   font-size: 1.5em;
   padding: 5px;
+}
+
+.key-grid {
+  display: grid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  grid-template:
+    '1 2 3' auto
+    'q w e' auto
+    'a s d' auto
+    'z x c' auto
+    'ctrl shift space' auto
+    ;
+}
+
+.interaction-key {
+  background: #ddd;
+  color: black;
+  border: none;
+}
+
+.interaction-key:hover {
+  background: salmon;
+  color: black;
+  border: none;
 }
